@@ -1,26 +1,54 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useRef, useState } from "react";
+import "./app.css";
+import JsBarcode from "jsbarcode";
 
 const App: React.FC = () => {
+  const svgRef = useRef(null);
+
+  const [value, setValue] = useLocalStorageState("barcode", "");
+
+  useEffect(() => {
+    if (!svgRef.current) {
+      return;
+    }
+
+    JsBarcode(svgRef.current, value, {
+      format: "CODE39",
+    });
+  }, [svgRef, value]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <input
+          value={value}
+          onChange={evt => setValue(evt.currentTarget.value)}
+        />
+      </div>
+      <div>{value ? <svg ref={svgRef} /> : undefined}</div>
     </div>
   );
+};
+
+function useLocalStorageState(
+  localStorageKey: string,
+  initialValue: string,
+): [string, (v: string) => void] {
+  const [value, setValue] = useState(initialValue);
+
+  let returnValue = value;
+  const lsValue = localStorage.getItem(localStorageKey);
+  if (lsValue !== null) {
+    returnValue = lsValue;
+  }
+
+  return [
+    returnValue,
+    (v: string) => {
+      localStorage.setItem(localStorageKey, v);
+      setValue(v);
+    },
+  ];
 }
 
 export default App;
