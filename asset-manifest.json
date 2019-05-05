@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/barcode.life/static/css/main.2c9dce05.chunk.css",
+    "main.js": "/barcode.life/static/js/main.eb61a7f0.chunk.js",
+    "main.js.map": "/barcode.life/static/js/main.eb61a7f0.chunk.js.map",
+    "runtime~main.js": "/barcode.life/static/js/runtime~main.ea71d166.js",
+    "runtime~main.js.map": "/barcode.life/static/js/runtime~main.ea71d166.js.map",
+    "static/js/2.5cdedcd5.chunk.js": "/barcode.life/static/js/2.5cdedcd5.chunk.js",
+    "static/js/2.5cdedcd5.chunk.js.map": "/barcode.life/static/js/2.5cdedcd5.chunk.js.map",
+    "index.html": "/barcode.life/index.html",
+    "precache-manifest.111b584f52c87219585ef76d3d434680.js": "/barcode.life/precache-manifest.111b584f52c87219585ef76d3d434680.js",
+    "service-worker.js": "/barcode.life/service-worker.js",
+    "static/css/main.2c9dce05.chunk.css.map": "/barcode.life/static/css/main.2c9dce05.chunk.css.map"
+  }
+}
