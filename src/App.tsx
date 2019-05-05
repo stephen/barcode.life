@@ -1,20 +1,26 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./app.css";
+import "./App.css";
 import JsBarcode from "jsbarcode";
 
 const App: React.FC = () => {
   const svgRef = useRef(null);
 
   const [value, setValue] = useLocalStorageState("barcode", "");
+  const [err, setError] = useState("" as string | undefined);
 
   useEffect(() => {
     if (!svgRef.current) {
       return;
     }
 
-    JsBarcode(svgRef.current, value, {
-      format: "CODE39",
-    });
+    try {
+      JsBarcode(svgRef.current, value, {
+        format: "CODE39",
+      });
+      setError(undefined);
+    } catch (err) {
+      setError(`Failed to create barcode: ${err}`);
+    }
   }, [svgRef, value]);
 
   return (
@@ -25,6 +31,7 @@ const App: React.FC = () => {
           onChange={evt => setValue(evt.currentTarget.value)}
         />
       </div>
+      {err ? <div>{err}</div> : undefined}
       <div>{value ? <svg ref={svgRef} /> : undefined}</div>
     </div>
   );
