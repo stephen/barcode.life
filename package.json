@@ -1,6 +1,11 @@
 {
   "name": "barcode.life",
   "version": "0.1.0",
+  "homepage":"https://stephen.github.io/barcode.life",
+  "author": {
+    "email": "stephen@stephenwan.com",
+    "name": "Stephen Wan"
+  },
   "private": true,
   "dependencies": {
     "@types/jest": "24.0.12",
