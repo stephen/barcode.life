@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/barcode.life/static/css/main.2c9dce05.chunk.css",
-    "main.js": "/barcode.life/static/js/main.eb61a7f0.chunk.js",
-    "main.js.map": "/barcode.life/static/js/main.eb61a7f0.chunk.js.map",
+    "main.css": "/barcode.life/static/css/main.3e545749.chunk.css",
+    "main.js": "/barcode.life/static/js/main.8a31ddb9.chunk.js",
+    "main.js.map": "/barcode.life/static/js/main.8a31ddb9.chunk.js.map",
     "runtime~main.js": "/barcode.life/static/js/runtime~main.ea71d166.js",
     "runtime~main.js.map": "/barcode.life/static/js/runtime~main.ea71d166.js.map",
-    "static/js/2.5cdedcd5.chunk.js": "/barcode.life/static/js/2.5cdedcd5.chunk.js",
-    "static/js/2.5cdedcd5.chunk.js.map": "/barcode.life/static/js/2.5cdedcd5.chunk.js.map",
+    "static/js/2.6a6540ba.chunk.js": "/barcode.life/static/js/2.6a6540ba.chunk.js",
+    "static/js/2.6a6540ba.chunk.js.map": "/barcode.life/static/js/2.6a6540ba.chunk.js.map",
     "index.html": "/barcode.life/index.html",
-    "precache-manifest.111b584f52c87219585ef76d3d434680.js": "/barcode.life/precache-manifest.111b584f52c87219585ef76d3d434680.js",
+    "precache-manifest.fe44a5884dccc8ed0d3c418719ab4e0e.js": "/barcode.life/precache-manifest.fe44a5884dccc8ed0d3c418719ab4e0e.js",
     "service-worker.js": "/barcode.life/service-worker.js",
-    "static/css/main.2c9dce05.chunk.css.map": "/barcode.life/static/css/main.2c9dce05.chunk.css.map"
+    "static/css/main.3e545749.chunk.css.map": "/barcode.life/static/css/main.3e545749.chunk.css.map"
   }
 }
